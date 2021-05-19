@@ -1,0 +1,29 @@
+{
+  "group": "snow_flake",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "snow_flake:ice_crystal"
+    },
+    "1": {
+      "item": "snow_flake:ice_crystal"
+    },
+    "2": {
+      "item": "snow_flake:ice_crystal"
+    },
+    "3": {
+      "item": "snow_flake:ice_crystal"
+    },
+    "5": {
+      "item": "snow_flake:ice_crystal"
+    }
+  },
+  "result": {
+    "item": "snow_flake:ice_armor_helmet",
+    "count": 1
+  }
+}

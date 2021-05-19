@@ -1,0 +1,36 @@
+{
+  "group": "snow_flake",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "snow_flake:ice_crystal"
+    },
+    "1": {
+      "item": "snow_flake:ice_crystal"
+    },
+    "2": {
+      "item": "snow_flake:ice_crystal"
+    },
+    "3": {
+      "item": "snow_flake:ice_crystal"
+    },
+    "5": {
+      "item": "snow_flake:ice_crystal"
+    },
+    "6": {
+      "item": "snow_flake:ice_crystal"
+    },
+    "8": {
+      "item": "snow_flake:ice_crystal"
+    }
+  },
+  "result": {
+    "item": "snow_flake:ice_armor_leggings",
+    "count": 1
+  }
+}

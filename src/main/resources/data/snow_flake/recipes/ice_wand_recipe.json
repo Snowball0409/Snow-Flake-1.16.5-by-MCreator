@@ -1,0 +1,20 @@
+{
+  "group": "snow_flake",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1",
+    "2 "
+  ],
+  "key": {
+    "1": {
+      "item": "snow_flake:snow_flake"
+    },
+    "2": {
+      "item": "snow_flake:ice_stick"
+    }
+  },
+  "result": {
+    "item": "snow_flake:ice_wand",
+    "count": 1
+  }
+}

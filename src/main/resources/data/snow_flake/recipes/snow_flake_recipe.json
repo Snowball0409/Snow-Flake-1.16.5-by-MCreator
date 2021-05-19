@@ -1,0 +1,30 @@
+{
+  "group": "snow_flake",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    " 4 ",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:snowball"
+    },
+    "2": {
+      "item": "minecraft:snowball"
+    },
+    "4": {
+      "item": "minecraft:snowball"
+    },
+    "6": {
+      "item": "minecraft:snowball"
+    },
+    "8": {
+      "item": "minecraft:snowball"
+    }
+  },
+  "result": {
+    "item": "snow_flake:snow_flake",
+    "count": 5
+  }
+}

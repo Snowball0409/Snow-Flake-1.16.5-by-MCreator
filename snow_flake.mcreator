@@ -1,0 +1,442 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "SnowFlakeTab",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "snow_flake_tab"
+    },
+    {
+      "name": "SnowFlake",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "snow_flake"
+    },
+    {
+      "name": "IceWand",
+      "type": "tool",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_wand"
+    },
+    {
+      "name": "IceFurnace",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_furnace"
+    },
+    {
+      "name": "ClickIce",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "click_ice",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SnowFlakeRecipe",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "snow_flake_recipe"
+    },
+    {
+      "name": "IceStick",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_stick"
+    },
+    {
+      "name": "IceWandRecipe",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_wand_recipe"
+    },
+    {
+      "name": "IceStickRecipe",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_stick_recipe"
+    },
+    {
+      "name": "IceFurnaceGUI",
+      "type": "gui",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_furnace_gui"
+    },
+    {
+      "name": "IceCrystal",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_crystal"
+    },
+    {
+      "name": "IcePickaxe",
+      "type": "tool",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_pickaxe"
+    },
+    {
+      "name": "IceAxe",
+      "type": "tool",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_axe"
+    },
+    {
+      "name": "IceSword",
+      "type": "tool",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_sword"
+    },
+    {
+      "name": "IceShovel",
+      "type": "tool",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_shovel"
+    },
+    {
+      "name": "IceHoe",
+      "type": "tool",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_hoe"
+    },
+    {
+      "name": "IcePickaxeRecipe",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_pickaxe_recipe"
+    },
+    {
+      "name": "IceAxeRecipe",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_axe_recipe"
+    },
+    {
+      "name": "IceSwordRecipe",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_sword_recipe"
+    },
+    {
+      "name": "IceShovelRecipe",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_shovel_recipe"
+    },
+    {
+      "name": "IceHoeRecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_hoe_recipe"
+    },
+    {
+      "name": "SnowballShooting",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "snowball_shooting",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SnowBallWand",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "snow_ball_wand"
+    },
+    {
+      "name": "SnowBallWandRecipe",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "snow_ball_wand_recipe"
+    },
+    {
+      "name": "Freeze",
+      "type": "potion",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "freeze"
+    },
+    {
+      "name": "UseIceWand",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "use_ice_wand",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "IceSlime",
+      "type": "mob",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_slime"
+    },
+    {
+      "name": "IceSlimeBall",
+      "type": "item",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_slime_ball"
+    },
+    {
+      "name": "IceArmor",
+      "type": "armor",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "IceArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_armor_helmet_recipe"
+    },
+    {
+      "name": "IceArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_armor_body_recipe"
+    },
+    {
+      "name": "IceArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_armor_leggings_recipe"
+    },
+    {
+      "name": "IceArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_armor_boots_recipe"
+    },
+    {
+      "name": "IceFurnaceMelting",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_furnace_melting",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NewIceRecipe",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "new_ice_recipe"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.snow_flake.ice_crystal": "Ice Crystal",
+      "item.snow_flake.ice_armor_helmet": "Ice Crystal Helmet",
+      "item.snow_flake.ice_armor_leggings": "Ice Crystal Leggings",
+      "item.snow_flake.ice_axe": "Ice Axe",
+      "item.snow_flake.snow_flake": "Snow Flake",
+      "item.snow_flake.ice_stick": "Ice Stick",
+      "item.snow_flake.ice_slime_ball": "Ice Slime Ball",
+      "item.snow_flake.ice_armor_boots": "Ice Crystal Boots",
+      "item.snow_flake.ice_armor_chestplate": "Ice Crystal Chestplate",
+      "item.snow_flake.snow_ball_wand": "Snow Ball Wand",
+      "item.snow_flake.ice_wand": "Ice Wand",
+      "item.snow_flake.ice_hoe": "Ice Hoe",
+      "effect.freeze": "Freeze",
+      "item.snow_flake.ice_shovel": "Ice Shovel",
+      "item.minecraft.lingering_potion.effect.freeze": "Lingering Freeze",
+      "item.minecraft.potion.effect.freeze": "Freeze",
+      "entity.snow_flake.ice_slime": "Ice Slime",
+      "item.snow_flake.ice_sword": "Ice Sword",
+      "item.minecraft.splash_potion.effect.freeze": "Splash Freeze",
+      "item.snow_flake.ice_pickaxe": "Ice Pickaxe",
+      "block.snow_flake.ice_furnace": "Ice Furnace",
+      "itemGroup.tabsnow_flake_tab": "Snow Flake",
+      "item.minecraft.tipped_arrow.effect.freeze": "Arrow of Freeze",
+      "item.snow_flake.ice_slime_spawn_egg": "Ice Slime Spawn Egg"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "snow_flake",
+    "modName": "Snow Flake",
+    "version": "1.0.0",
+    "author": "kai0409CX, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.snowflake",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}
