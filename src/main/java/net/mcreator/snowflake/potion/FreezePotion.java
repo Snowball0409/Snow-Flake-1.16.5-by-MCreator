@@ -7,6 +7,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.potion.Potion;
 import net.minecraft.potion.EffectType;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effect;
@@ -17,6 +18,8 @@ import net.mcreator.snowflake.SnowFlakeModElements;
 public class FreezePotion extends SnowFlakeModElements.ModElement {
 	@ObjectHolder("snow_flake:freeze")
 	public static final Effect potion = null;
+	@ObjectHolder("snow_flake:freeze")
+	public static final Potion potionType = null;
 	public FreezePotion(SnowFlakeModElements instance) {
 		super(instance, 24);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -26,6 +29,18 @@ public class FreezePotion extends SnowFlakeModElements.ModElement {
 	public void registerEffect(RegistryEvent.Register<Effect> event) {
 		event.getRegistry().register(new EffectCustom());
 	}
+
+	@SubscribeEvent
+	public void registerPotion(RegistryEvent.Register<Potion> event) {
+		event.getRegistry().register(new PotionCustom());
+	}
+	public static class PotionCustom extends Potion {
+		public PotionCustom() {
+			super(new EffectInstance(potion, 3600));
+			setRegistryName("freeze");
+		}
+	}
+
 	public static class EffectCustom extends Effect {
 		private final ResourceLocation potionIcon;
 		public EffectCustom() {

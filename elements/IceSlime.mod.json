@@ -5,7 +5,7 @@
     "mobName": "Ice Slime",
     "mobLabel": "",
     "mobModelName": "Slime",
-    "mobModelTexture": "wip_pic.png",
+    "mobModelTexture": "ice_slime.png",
     "mobModelGlowTexture": "",
     "modelWidth": 1.2,
     "modelHeight": 1.0,

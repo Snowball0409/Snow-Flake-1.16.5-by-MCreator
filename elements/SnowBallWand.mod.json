@@ -31,8 +31,8 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onRightClickedInAir": {
-      "name": "SnowballShooting"
+    "onRightClickedOnBlock": {
+      "name": "UseSnowBallWand"
     }
   }
 }

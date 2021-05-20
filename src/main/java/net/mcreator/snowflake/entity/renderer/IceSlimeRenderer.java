@@ -23,7 +23,7 @@ public class IceSlimeRenderer {
 					renderManager -> new MobRenderer(renderManager, new SlimeModel(0), 1.2f) {
 						@Override
 						public ResourceLocation getEntityTexture(Entity entity) {
-							return new ResourceLocation("snow_flake:textures/wip_pic.png");
+							return new ResourceLocation("snow_flake:textures/ice_slime.png");
 						}
 					});
 		}
