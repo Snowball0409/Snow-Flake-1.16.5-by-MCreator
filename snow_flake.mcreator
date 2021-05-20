@@ -211,6 +211,35 @@
       "registry_name": "ice_hoe_recipe"
     },
     {
+      "name": "SnowballShooting",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "snowball_shooting",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
       "name": "SnowBallWand",
       "type": "item",
       "sortid": 22,
@@ -355,281 +384,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "new_ice_recipe"
-    },
-    {
-      "name": "IceFurnaceOn",
-      "type": "block",
-      "sortid": 35,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ice_furnace_on"
-    },
-    {
-      "name": "IceFurnaceIsRecipe",
-      "type": "procedure",
-      "sortid": 36,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ice_furnace_is_recipe",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "IceFurnaceResult",
-      "type": "procedure",
-      "sortid": 37,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ice_furnace_result",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "IceFurnaceFuel",
-      "type": "procedure",
-      "sortid": 38,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ice_furnace_fuel",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "IceFurnaceDisplay",
-      "type": "procedure",
-      "sortid": 39,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ice_furnace_display",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "HardenedIceCrystal",
-      "type": "item",
-      "sortid": 40,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "hardened_ice_crystal"
-    },
-    {
-      "name": "HardenedIcePickaxe",
-      "type": "tool",
-      "sortid": 41,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "hardened_ice_pickaxe"
-    },
-    {
-      "name": "HardenedIceAxe",
-      "type": "tool",
-      "sortid": 42,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "hardened_ice_axe"
-    },
-    {
-      "name": "HardenedIceSword",
-      "type": "tool",
-      "sortid": 43,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "hardened_ice_sword"
-    },
-    {
-      "name": "HardenedIceShovel",
-      "type": "tool",
-      "sortid": 44,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "hardened_ice_shovel"
-    },
-    {
-      "name": "HardenedIceHoe",
-      "type": "tool",
-      "sortid": 45,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "hardened_ice_hoe"
-    },
-    {
-      "name": "HardenedIcePickaxeRecipe",
-      "type": "recipe",
-      "sortid": 46,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "hardened_ice_pickaxe_recipe"
-    },
-    {
-      "name": "HardenedIceAxeRecipe",
-      "type": "recipe",
-      "sortid": 47,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "hardened_ice_axe_recipe"
-    },
-    {
-      "name": "HardenedIceSwordRecipe",
-      "type": "recipe",
-      "sortid": 48,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "hardened_ice_sword_recipe"
-    },
-    {
-      "name": "HardenedIceShovelRecipe",
-      "type": "recipe",
-      "sortid": 49,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "hardened_ice_shovel_recipe"
-    },
-    {
-      "name": "HardenedIceHoeRecipe",
-      "type": "recipe",
-      "sortid": 50,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "hardened_ice_hoe_recipe"
-    },
-    {
-      "name": "IceCrystalBlock",
-      "type": "block",
-      "sortid": 51,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ice_crystal_block"
-    },
-    {
-      "name": "IceCrystalBlockRecipe",
-      "type": "recipe",
-      "sortid": 52,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ice_crystal_block_recipe"
-    },
-    {
-      "name": "UseSnowBallWand",
-      "type": "procedure",
-      "sortid": 53,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "use_snow_ball_wand",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "direction",
-            "type": "direction"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
     }
   ],
   "variable_elements": [],
@@ -639,25 +393,18 @@
       "item.snow_flake.ice_crystal": "Ice Crystal",
       "item.snow_flake.ice_armor_helmet": "Ice Crystal Helmet",
       "item.snow_flake.ice_armor_leggings": "Ice Crystal Leggings",
-      "item.snow_flake.hardened_ice_pickaxe": "HardenedIce Pickaxe",
-      "item.snow_flake.hardened_ice_shovel": "HardenedIce Shovel",
-      "block.snow_flake.ice_furnace_on": "Ice Furnace",
-      "block.snow_flake.ice_crystal_block": "Ice Crystal Block",
       "item.snow_flake.ice_axe": "Ice Axe",
       "item.snow_flake.snow_flake": "Snow Flake",
       "item.snow_flake.ice_stick": "Ice Stick",
       "item.snow_flake.ice_slime_ball": "Ice Slime Ball",
       "item.snow_flake.ice_armor_boots": "Ice Crystal Boots",
-      "item.snow_flake.hardened_ice_crystal": "Hardened Ice Crystal",
       "item.snow_flake.ice_armor_chestplate": "Ice Crystal Chestplate",
-      "item.snow_flake.hardened_ice_axe": "HardenedIce Axe",
-      "item.snow_flake.snow_ball_wand": "Snow Ball Wand",
       "item.snow_flake.ice_wand": "Ice Wand",
+      "item.snow_flake.snow_ball_wand": "Snow Ball Wand",
       "item.snow_flake.ice_hoe": "Ice Hoe",
       "effect.freeze": "Freeze",
       "item.snow_flake.ice_shovel": "Ice Shovel",
       "item.minecraft.lingering_potion.effect.freeze": "Lingering Freeze",
-      "item.snow_flake.hardened_ice_hoe": "HardenedIce Hoe",
       "item.minecraft.potion.effect.freeze": "Freeze",
       "entity.snow_flake.ice_slime": "Ice Slime",
       "item.snow_flake.ice_sword": "Ice Sword",
@@ -666,8 +413,7 @@
       "block.snow_flake.ice_furnace": "Ice Furnace",
       "itemGroup.tabsnow_flake_tab": "Snow Flake",
       "item.minecraft.tipped_arrow.effect.freeze": "Arrow of Freeze",
-      "item.snow_flake.ice_slime_spawn_egg": "Ice Slime Spawn Egg",
-      "item.snow_flake.hardened_ice_sword": "HardenedIce Sword"
+      "item.snow_flake.ice_slime_spawn_egg": "Ice Slime Spawn Egg"
     }
   },
   "foldersRoot": {
