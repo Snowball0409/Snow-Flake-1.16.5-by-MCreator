@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "snow_flake:blocks/ice_crystal_block",
+    "up": "snow_flake:blocks/ice_crystal_block",
+    "north": "snow_flake:blocks/ice_crystal_block",
+    "east": "snow_flake:blocks/ice_crystal_block",
+    "south": "snow_flake:blocks/ice_crystal_block",
+    "west": "snow_flake:blocks/ice_crystal_block",
+    "particle": "snow_flake:blocks/ice_crystal_block"
+  }
+}

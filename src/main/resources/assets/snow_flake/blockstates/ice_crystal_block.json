@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "snow_flake:block/ice_crystal_block"
+    }
+  }
+}
