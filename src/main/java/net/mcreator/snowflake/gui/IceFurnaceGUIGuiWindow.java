@@ -66,7 +66,8 @@ public class IceFurnaceGUIGuiWindow extends ContainerScreen<IceFurnaceGUIGui.Gui
 
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
-		this.font.drawString(ms, "Ice Furnace", 59, 10, -12829636);
+		this.font.drawString(ms, "Ice Furnace", 58, 10, -12829636);
+		this.font.drawString(ms, "Invetory", 6, 69, -12829636);
 	}
 
 	@Override

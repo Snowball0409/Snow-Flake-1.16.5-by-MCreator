@@ -19,9 +19,6 @@
           "id": 0,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": false,
-          "onSlotChanged": {
-            "name": "IceFurnaceMelting"
-          },
           "name": "Slot #0",
           "x": 149,
           "y": 72
@@ -31,14 +28,11 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:SnowFlake"
+            "value": ""
           },
           "id": 1,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": false,
-          "onSlotChanged": {
-            "name": "IceFurnaceMelting"
-          },
           "name": "Slot #1",
           "x": 203,
           "y": 72
@@ -50,12 +44,6 @@
           "id": 2,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": false,
-          "onTakenFromSlot": {
-            "name": "IceFurnaceMelting"
-          },
-          "onStackTransfer": {
-            "name": "IceFurnaceMelting"
-          },
           "name": "Slot #2",
           "x": 257,
           "y": 71
@@ -70,8 +58,21 @@
             "falpha": 0.0
           },
           "name": "Ice Furnace",
-          "x": 185,
+          "x": 184,
           "y": 47
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Invetory",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Invetory",
+          "x": 132,
+          "y": 106
         }
       }
     ]

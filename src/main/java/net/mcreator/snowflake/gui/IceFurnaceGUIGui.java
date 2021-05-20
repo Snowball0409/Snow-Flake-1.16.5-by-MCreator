@@ -28,8 +28,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.gui.ScreenManager;
 
-import net.mcreator.snowflake.procedures.IceFurnaceMeltingProcedure;
-import net.mcreator.snowflake.item.SnowFlakeItem;
 import net.mcreator.snowflake.SnowFlakeModElements;
 import net.mcreator.snowflake.SnowFlakeMod;
 
@@ -116,38 +114,10 @@ public class IceFurnaceGUIGui extends SnowFlakeModElements.ModElement {
 				}
 			}
 			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 24, 36) {
-				@Override
-				public void onSlotChanged() {
-					super.onSlotChanged();
-					GuiContainerMod.this.slotChanged(0, 0, 0);
-				}
 			}));
 			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 78, 36) {
-				@Override
-				public void onSlotChanged() {
-					super.onSlotChanged();
-					GuiContainerMod.this.slotChanged(1, 0, 0);
-				}
-
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return (new ItemStack(SnowFlakeItem.block, (int) (1)).getItem() == stack.getItem());
-				}
 			}));
 			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 132, 35) {
-				@Override
-				public ItemStack onTake(PlayerEntity entity, ItemStack stack) {
-					ItemStack retval = super.onTake(entity, stack);
-					GuiContainerMod.this.slotChanged(2, 1, 0);
-					return retval;
-				}
-
-				@Override
-				public void onSlotChange(ItemStack a, ItemStack b) {
-					super.onSlotChange(a, b);
-					GuiContainerMod.this.slotChanged(2, 2, b.getCount() - a.getCount());
-				}
-
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
@@ -419,46 +389,5 @@ public class IceFurnaceGUIGui extends SnowFlakeModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
-		if (slotID == 0 && changeType == 0) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				IceFurnaceMeltingProcedure.executeProcedure($_dependencies);
-			}
-		}
-		if (slotID == 1 && changeType == 0) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				IceFurnaceMeltingProcedure.executeProcedure($_dependencies);
-			}
-		}
-		if (slotID == 2 && changeType == 1) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				IceFurnaceMeltingProcedure.executeProcedure($_dependencies);
-			}
-		}
-		if (slotID == 2 && changeType == 2) {
-			int amount = meta;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				IceFurnaceMeltingProcedure.executeProcedure($_dependencies);
-			}
-		}
 	}
 }

@@ -1,10 +1,15 @@
 package net.mcreator.snowflake.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
+
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.state.Property;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.item.ItemEntity;
@@ -112,6 +117,18 @@ public class ClickIceProcedure extends SnowFlakeModElements.ModElement {
 					}
 				}
 			}
+			world.getPendingBlockTicks().scheduleTick(new BlockPos((int) x, (int) y, (int) z),
+					world.getBlockState(new BlockPos((int) x, (int) y, (int) z)).getBlock(), (int) 10);
+			if (world instanceof World && !world.isRemote()) {
+				((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")),
+						SoundCategory.NEUTRAL, (float) 1, (float) 1);
+			} else {
+				((World) world).playSound(x, y, z,
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.break")),
+						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+			}
+			world.addParticle(ParticleTypes.FIREWORK, x, y, z, 0, 1, 0);
 		}
 	}
 }

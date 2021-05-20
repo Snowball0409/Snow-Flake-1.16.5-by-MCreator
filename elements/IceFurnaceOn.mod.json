@@ -5,7 +5,7 @@
     "texture": "ice_furnace_side",
     "textureTop": "ice_furnace_side",
     "textureLeft": "ice_furnace_side",
-    "textureFront": "ice_furnace_front_off",
+    "textureFront": "ice_furnace_front_on",
     "textureRight": "ice_furnace_side",
     "textureBack": "ice_furnace_side",
     "renderType": 10,
@@ -39,11 +39,11 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:SnowFlakeTab"
+      "value": "No creative tab entry"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:IceFurnace"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -74,7 +74,7 @@
     "soundOnStep": {
       "value": "STONE"
     },
-    "luminance": 0,
+    "luminance": 6,
     "unbreakable": false,
     "breakHarvestLevel": 0,
     "spawnParticles": false,

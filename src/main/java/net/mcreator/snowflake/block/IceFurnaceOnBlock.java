@@ -60,7 +60,6 @@ import net.minecraft.block.Block;
 
 import net.mcreator.snowflake.procedures.IceFurnaceMeltingProcedure;
 import net.mcreator.snowflake.procedures.IceFurnaceDisplayProcedure;
-import net.mcreator.snowflake.itemgroup.SnowFlakeTabItemGroup;
 import net.mcreator.snowflake.gui.IceFurnaceGUIGui;
 import net.mcreator.snowflake.SnowFlakeModElements;
 
@@ -76,37 +75,36 @@ import java.util.Collections;
 import io.netty.buffer.Unpooled;
 
 @SnowFlakeModElements.ModElement.Tag
-public class IceFurnaceBlock extends SnowFlakeModElements.ModElement {
-	@ObjectHolder("snow_flake:ice_furnace")
+public class IceFurnaceOnBlock extends SnowFlakeModElements.ModElement {
+	@ObjectHolder("snow_flake:ice_furnace_on")
 	public static final Block block = null;
-	@ObjectHolder("snow_flake:ice_furnace")
+	@ObjectHolder("snow_flake:ice_furnace_on")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
-	public IceFurnaceBlock(SnowFlakeModElements instance) {
-		super(instance, 4);
+	public IceFurnaceOnBlock(SnowFlakeModElements instance) {
+		super(instance, 35);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items
-				.add(() -> new BlockItem(block, new Item.Properties().group(SnowFlakeTabItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(null)).setRegistryName(block.getRegistryName()));
 	}
 	private static class TileEntityRegisterHandler {
 		@SubscribeEvent
 		public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
-			event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("ice_furnace"));
+			event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("ice_furnace_on"));
 		}
 	}
 
 	public static class CustomBlock extends Block {
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).harvestLevel(0)
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).setLightLevel(s -> 6).harvestLevel(0)
 					.harvestTool(ToolType.PICKAXE).setRequiresTool().setNeedsPostProcessing((bs, br, bp) -> true)
 					.setEmmisiveRendering((bs, br, bp) -> true));
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
-			setRegistryName("ice_furnace");
+			setRegistryName("ice_furnace_on");
 		}
 
 		@Override
@@ -138,7 +136,7 @@ public class IceFurnaceBlock extends SnowFlakeModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(IceFurnaceBlock.block, (int) (1)));
 		}
 
 		@Override
@@ -313,7 +311,7 @@ public class IceFurnaceBlock extends SnowFlakeModElements.ModElement {
 
 		@Override
 		public ITextComponent getDefaultName() {
-			return new StringTextComponent("ice_furnace");
+			return new StringTextComponent("ice_furnace_on");
 		}
 
 		@Override
