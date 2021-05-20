@@ -1,0 +1,30 @@
+{
+  "group": "snow_flake",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "snow_flake:hardened_ice_crystal"
+    },
+    "1": {
+      "item": "snow_flake:hardened_ice_crystal"
+    },
+    "2": {
+      "item": "snow_flake:hardened_ice_crystal"
+    },
+    "3": {
+      "item": "snow_flake:ice_stick"
+    },
+    "5": {
+      "item": "snow_flake:ice_stick"
+    }
+  },
+  "result": {
+    "item": "snow_flake:hardened_ice_axe",
+    "count": 1
+  }
+}
