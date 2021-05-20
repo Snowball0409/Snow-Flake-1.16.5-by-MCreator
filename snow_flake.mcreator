@@ -384,6 +384,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "new_ice_recipe"
+    },
+    {
+      "name": "EternalIceCrystal",
+      "type": "item",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eternal_ice_crystal"
     }
   ],
   "variable_elements": [],
@@ -405,6 +414,7 @@
       "effect.freeze": "Freeze",
       "item.snow_flake.ice_shovel": "Ice Shovel",
       "item.minecraft.lingering_potion.effect.freeze": "Lingering Freeze",
+      "item.snow_flake.eternal_ice_crystal": "Eternal Ice Crystal",
       "item.minecraft.potion.effect.freeze": "Freeze",
       "entity.snow_flake.ice_slime": "Ice Slime",
       "item.snow_flake.ice_sword": "Ice Sword",
