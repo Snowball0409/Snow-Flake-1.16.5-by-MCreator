@@ -393,6 +393,116 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "eternal_ice_crystal"
+    },
+    {
+      "name": "IceCharmCheck",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_charm_check",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IceCharm",
+      "type": "item",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ice_charm"
+    },
+    {
+      "name": "CoolCharm",
+      "type": "item",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cool_charm"
+    },
+    {
+      "name": "CoolCharmCheck",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cool_charm_check",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Charm",
+      "type": "tag",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "charm"
+    },
+    {
+      "name": "CharmBase",
+      "type": "item",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "charm_base"
     }
   ],
   "variable_elements": [],
@@ -403,6 +513,7 @@
       "item.snow_flake.ice_armor_helmet": "Ice Crystal Helmet",
       "item.snow_flake.ice_armor_leggings": "Ice Crystal Leggings",
       "item.snow_flake.ice_axe": "Ice Axe",
+      "item.snow_flake.charm_base": "Charm Base",
       "item.snow_flake.snow_flake": "Snow Flake",
       "item.snow_flake.ice_stick": "Ice Stick",
       "item.snow_flake.ice_slime_ball": "Ice Slime Ball",
@@ -410,8 +521,10 @@
       "item.snow_flake.ice_armor_chestplate": "Ice Crystal Chestplate",
       "item.snow_flake.ice_wand": "Ice Wand",
       "item.snow_flake.snow_ball_wand": "Snow Ball Wand",
+      "item.snow_flake.cool_charm": "Ice Charm",
       "item.snow_flake.ice_hoe": "Ice Hoe",
       "effect.freeze": "Freeze",
+      "item.snow_flake.ice_charm": "Ice Charm",
       "item.snow_flake.ice_shovel": "Ice Shovel",
       "item.minecraft.lingering_potion.effect.freeze": "Lingering Freeze",
       "item.snow_flake.eternal_ice_crystal": "Eternal Ice Crystal",

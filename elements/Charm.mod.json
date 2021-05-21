@@ -1,0 +1,23 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:IceCharm"
+      },
+      {
+        "value": "CUSTOM:CoolCharm"
+      },
+      {
+        "value": "CUSTOM:CharmBase"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "charm",
+    "namespace": "forge"
+  }
+}

@@ -3,18 +3,18 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "ethernal_ice_crystal",
+    "texture": "ice_charm",
     "customModelName": "Normal",
-    "name": "Eternal Ice Crystal",
-    "rarity": "EPIC",
+    "name": "Ice Charm",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:SnowFlakeTab"
     },
-    "stackSize": 64,
-    "enchantability": 0,
+    "stackSize": 1,
+    "enchantability": 5,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 0,
+    "damageCount": 150,
     "recipeRemainder": {
       "value": ""
     },
@@ -25,9 +25,12 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [],
-    "hasGlow": true,
+    "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
-    "inventoryStackSize": 64
+    "inventoryStackSize": 64,
+    "onItemInUseTick": {
+      "name": "IceCharmCheck"
+    }
   }
 }

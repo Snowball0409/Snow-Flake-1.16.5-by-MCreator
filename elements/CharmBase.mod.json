@@ -3,10 +3,10 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "ethernal_ice_crystal",
+    "texture": "ice_charm",
     "customModelName": "Normal",
-    "name": "Eternal Ice Crystal",
-    "rarity": "EPIC",
+    "name": "Charm Base",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:SnowFlakeTab"
     },
@@ -25,7 +25,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [],
-    "hasGlow": true,
+    "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64

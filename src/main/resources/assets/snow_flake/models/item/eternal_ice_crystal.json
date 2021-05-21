@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "snow_flake:items/hardened_ice_crystal"
+    "layer0": "snow_flake:items/ethernal_ice_crystal"
   }
 }
