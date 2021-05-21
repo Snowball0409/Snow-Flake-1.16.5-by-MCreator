@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "snow_flake:blocks/ice_furnace_side",
+    "up": "snow_flake:blocks/ice_furnace_side",
+    "north": "snow_flake:blocks/ice_furnace_side",
+    "east": "snow_flake:blocks/ice_furnace_side",
+    "south": "snow_flake:blocks/ice_furnace_side",
+    "west": "snow_flake:blocks/ice_furnace_side",
+    "particle": "snow_flake:blocks/ice_furnace_side"
+  }
+}

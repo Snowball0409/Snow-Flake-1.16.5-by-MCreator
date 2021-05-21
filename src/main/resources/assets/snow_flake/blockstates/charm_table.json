@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "snow_flake:block/charm_table"
+    },
+    "facing=east": {
+      "model": "snow_flake:block/charm_table",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "snow_flake:block/charm_table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "snow_flake:block/charm_table",
+      "y": 270
+    }
+  }
+}
