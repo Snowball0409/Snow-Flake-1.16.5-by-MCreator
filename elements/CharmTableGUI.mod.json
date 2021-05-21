@@ -143,9 +143,6 @@
           "y": 71
         }
       }
-    ],
-    "onTick": {
-      "name": "CharmTableRecipe"
-    }
+    ]
   }
 }
