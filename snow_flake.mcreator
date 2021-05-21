@@ -512,6 +512,73 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "charm_table"
+    },
+    {
+      "name": "CharmTableRecipe",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "charm_table_recipe",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CharmTableCrafting",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "charm_table_crafting",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CharmTableGUI",
+      "type": "gui",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "charm_table_gui"
     }
   ],
   "variable_elements": [],
@@ -530,7 +597,7 @@
       "item.snow_flake.ice_armor_chestplate": "Ice Crystal Chestplate",
       "item.snow_flake.ice_wand": "Ice Wand",
       "item.snow_flake.snow_ball_wand": "Snow Ball Wand",
-      "item.snow_flake.cool_charm": "Ice Charm",
+      "item.snow_flake.cool_charm": "Cool Charm",
       "item.snow_flake.ice_hoe": "Ice Hoe",
       "effect.freeze": "Freeze",
       "item.snow_flake.ice_charm": "Ice Charm",

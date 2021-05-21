@@ -1,0 +1,151 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 186,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 10,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #0",
+          "x": 141,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #1",
+          "x": 168,
+          "y": 44
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #2",
+          "x": 195,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #3",
+          "x": 168,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Charm Table",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Charm Table",
+          "x": 132,
+          "y": 32
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Inventory",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Inventory",
+          "x": 131,
+          "y": 118
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "charm_patterm.png",
+          "use1Xscale": true,
+          "name": "charm_patterm.png",
+          "x": 168,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #4",
+          "x": 168,
+          "y": 71
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "onTakenFromSlot": {
+            "name": "CharmTableCrafting"
+          },
+          "onStackTransfer": {
+            "name": "CharmTableCrafting"
+          },
+          "name": "Slot #5",
+          "x": 249,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "progress_bar.png",
+          "use1Xscale": false,
+          "name": "progress_bar.png",
+          "x": 222,
+          "y": 71
+        }
+      }
+    ],
+    "onTick": {
+      "name": "CharmTableRecipe"
+    }
+  }
+}

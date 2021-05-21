@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "cool_charm",
     "customModelName": "Normal",
-    "name": "Ice Charm",
+    "name": "Cool Charm",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:SnowFlakeTab"
